@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.nav-menu li {
+    margin: 0 15px;
+    padding-top: 10px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .nav-menu a {
+        padding: 10px 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+:root {
+    --background-color-light: #ffffff;
+    --background-color-dark: #121212;
+    --text-color-light: #000000;
+    --text-color-dark: #ffffff;
+}
+
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+body.light-mode {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.text{
+    color: rgb(220, 131, 146);
+    margin-left: 35%;
+    margin-top: 18%;
+    font-size: 50px;
+}
+.input{
+    margin-left: 35%;
+    margin-top: 2%;
+    
+}
+
+.design-inputbtn{
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.okbtn{
+     background-color: #ccc;
+     color: #007bff;
+     margin-left: 10px;
+}
