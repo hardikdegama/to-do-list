@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Navbar</title>
+    <link rel="icon"  href="titleimg.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
     <nav class="navbar">
         <div class="navbar-container">
             <a href="#" class="logo"> TO - DO - LIST</a>
@@ -15,17 +17,25 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li> <button id="theme-toggle"><img src="themes.png" height="30px" width="30px" alt=""></button></li>
+                <li><button id="toggleButton"> <img src="themes.png" class="icon" alt="404" width="20px" height="20px"></button></li>
             </ul>
 
         </div>
+        <div>  </div>
     </nav>
     <div class="text"> To-Do-List</div>
     <div class="input">
-        <input type="text" class="design-inputbtn" >
-        <button class="okbtn">Done</button>
+        <input type="text" class="design-inputbtn" id="taskInput" placeholder="Enter a new task" >
+        <button class="okbtn" id="addButton">Done</button>
+        <h3 id="taskList"  class="h3txt"></h3>
     </div>
+  
+    
+</div>
     <script src="script.js"></script>
+    
+    
+    
 
 </body>
 </html>

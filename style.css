@@ -4,9 +4,10 @@ body {
 }
 
 .navbar {
-    background-color: #333;
-    color: #fff;
+    background-color: lightskyblue;
+    color: black;
     padding: 10px 20px;
+    height: 50px;
 }
 
 .navbar-container {
@@ -68,50 +69,71 @@ body {
     }
 }
 
-
-:root {
-    --background-color-light: #ffffff;
-    --background-color-dark: #121212;
-    --text-color-light: #000000;
-    --text-color-dark: #ffffff;
-}
-
+/* Default Light Mode Styles */
 body {
-    background-color: var(--background-color-light);
-    color: var(--text-color-light);
+    background-color: white;
+    color: black;
     font-family: Arial, sans-serif;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-body.dark-mode {
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
-}
-body.light-mode {
-    background-color: var(--background-color-light);
-    color: var(--text-color-light);
+    margin: 0;
+    padding: 0;
 }
 
 
 button {
-    padding: 10px 20px;
+    padding: 0;
     font-size: 16px;
     cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3;
+button.dark-mode {
+    background-color: #333;
+    color: white;
 }
 
+button.light-mode {
+    background-color: #333;
+    color: black;
+    border-style: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+body.dark-mode button{
+        
+        border-style: none;
+    }
+   
+body.dark-mode img{
+    background-color: white;
+    border-style: none;
+}
+
+button.light-mode button{
+        
+    border-style: none;
+    background-color: #333;
+}
+
+button.light-mode img{
+background-color: rgb(65, 61, 61);
+border-style: none;
+}
+
+body.dark-mode nav-menu a{
+    color: black;
+    
+}
+
+.icon{
+    padding-top: 0;
+}
 .text{
-    color: rgb(220, 131, 146);
-    margin-left: 35%;
-    margin-top: 18%;
+
+    margin-left: 36%;
+    margin-top: 15%;
     font-size: 50px;
 }
 .input{
@@ -124,12 +146,39 @@ button:hover {
     height: 30px;
     width: 300px;
     padding: 5px;
+    
     border: 1px solid #ccc;
     font-size: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 .okbtn{
-     background-color: #ccc;
-     color: #007bff;
-     margin-left: 10px;
+     background-color:#007bff;
+     color: white;
+     margin-left: 20px;
+     border-radius: 10px;
+     width: 12%;
+     height: 40px;
+     font-size: 28px;
+
+}
+.h3txt{
+    margin-left: 2%
+}
+.edit-button{
+    background-color: #007bff;
+    margin-left: 20%;
+    height: 30px;
+    width: 10%;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.delete-button{
+    background-color:rgb(196, 24, 24);
+    margin-left: 2%;
+    height: 30px;
+    width: 12%;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
 }
