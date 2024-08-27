@@ -195,7 +195,7 @@ body.dark-mode nav-menu a{
 }
 
 /* Mobile responsive styles */
-@media (max-width: 320px) {
+@media (max-width: 425px) {
     .navbar {
         background-color: #4682B4; /* Darker blue for better visibility on smaller screens */
         width: 100%;
