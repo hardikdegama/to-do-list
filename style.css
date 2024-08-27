@@ -182,3 +182,92 @@ body.dark-mode nav-menu a{
     border-radius: 10px;
     color: white;
 }
+/* Navbar styles */
+.navbar {
+    background-color: #87CEFA; /* Updated color to a more visible blue */
+    color: black;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.nav-menu a {
+    color: #000; /* Ensuring the text color is black for better visibility */
+}
+
+/* Mobile responsive styles */
+@media (max-width: 320px) {
+    .navbar {
+        background-color: #4682B4; /* Darker blue for better visibility on smaller screens */
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .logo {
+        font-size: 20px;
+        
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav-menu li {
+        margin: 5px 0;
+    }
+
+    .nav-menu a {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text {
+        text-align: center;
+        margin-top: 90%;
+        font-size: 40px; /* Smaller font size for smaller screens */
+        
+        
+    }
+
+    .input {
+        margin-left: 30px ;
+        text-align: center;
+    }
+
+    .design-inputbtn {
+        width: 70%; /* Responsive width */
+    }
+
+    .okbtn {
+        width: 18%; /* Responsive width */
+        font-size: 16px;
+        margin-left: 4%;
+    }
+.mobile{
+    display: flex;
+}
+    .edit-button {
+        background-color: #007bff;
+        margin-left: 20%;
+        height: 30px;
+        width: 15%;
+        font-size: 15px;
+        border-radius: 10px;
+        color: white;
+        margin-top: 5%;
+    }
+    .delete-button{
+        background-color:rgb(196, 24, 24);
+        margin-left: 2%;
+        height: 30px;
+        width: 22%;
+        font-size: 15px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+}
